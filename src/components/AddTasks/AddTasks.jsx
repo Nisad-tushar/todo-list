@@ -88,16 +88,20 @@ const AddTasks = () => {
               {' '}
               <h1
                 className={`${
-                  order === 'DSC' && 'bg-teal-400 text-black font-bold'
-                } bg-black p-2 font-outfit hover:text-white cursor-pointer`}
+                  order === 'DSC'
+                    ? 'bg-teal-400 text-black font-bold'
+                    : 'bg-black'
+                }  p-2 font-outfit hover:text-white cursor-pointer`}
                 onClick={() => setOrder('DSC')}
               >
                 DESCENDING
               </h1>
               <h1
                 className={`${
-                  order === 'ASC' && 'bg-teal-400 text-black font-bold'
-                } bg-black p-2 font-outfit hover:text-white cursor-pointer`}
+                  order === 'ASC'
+                    ? 'bg-teal-400 text-black font-bold'
+                    : 'bg-black'
+                }  p-2 font-outfit hover:text-white cursor-pointer`}
                 onClick={() => setOrder('ASC')}
               >
                 ASCENDING
